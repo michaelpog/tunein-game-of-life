@@ -14,7 +14,7 @@ public class InputBoardFactory {
     }
 
     public static InputBoardFactory getInstance() {
-        if(instance == null) {
+        if (instance == null) {
             instance = new InputBoardFactory();
         }
 
@@ -22,8 +22,8 @@ public class InputBoardFactory {
     }
 
     public Board createBoard(String providerName, int numberOfRows, int numberOfColumns) {
-        if(!providersMap.containsKey(providerName)) {
-            throw new RuntimeException(providerName+": provider doesn't exist");
+        if (!providersMap.containsKey(providerName)) {
+            throw new RuntimeException(providerName + ": provider doesn't exist");
         }
 
         return providersMap.get(providerName).createBoard(numberOfRows, numberOfColumns);
