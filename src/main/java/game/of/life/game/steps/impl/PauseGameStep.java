@@ -1,6 +1,6 @@
-package game.of.life.steps.impl;
+package game.of.life.game.steps.impl;
 
-import game.of.life.steps.GameStep;
+import game.of.life.game.steps.GameStep;
 
 public class PauseGameStep implements GameStep {
     private final long pauseTimeMs;

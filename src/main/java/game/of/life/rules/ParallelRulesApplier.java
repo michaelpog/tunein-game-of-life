@@ -1,11 +1,10 @@
-package game.of.life.rules.imp;
+package game.of.life.rules;
 
 import game.of.life.Board;
 import game.of.life.Cell;
 import game.of.life.factories.RulesFactory;
-import game.of.life.rules.NextStateStrategy;
-import game.of.life.states.CellState;
-import game.of.life.steps.RulesApplier;
+import game.of.life.game.steps.RulesApplier;
+import game.of.life.state.management.CellState;
 
 import java.util.Set;
 import java.util.concurrent.Semaphore;

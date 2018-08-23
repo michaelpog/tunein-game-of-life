@@ -9,9 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         Board board = InputBoardFactory.getInstance().createBoard(GliderBoardProvider.NAME, NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
-
         Game game = new Game(board);
-
         game.start();
     }
 }

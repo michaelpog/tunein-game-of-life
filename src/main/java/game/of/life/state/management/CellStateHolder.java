@@ -1,8 +1,4 @@
-package game.of.life.states;
-
-import game.of.life.Cell;
-import game.of.life.states.StateChangeObserver;
-import game.of.life.states.StateChangeObservable;
+package game.of.life.state.management;
 
 import java.util.ArrayList;
 import java.util.List;

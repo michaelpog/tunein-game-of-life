@@ -1,6 +1,5 @@
-package game.of.life.steps;
+package game.of.life.game.steps;
 
 public interface RulesApplier extends Runnable {
-
     void await() throws InterruptedException;
 }

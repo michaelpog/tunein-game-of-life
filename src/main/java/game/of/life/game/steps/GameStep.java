@@ -1,4 +1,4 @@
-package game.of.life.steps;
+package game.of.life.game.steps;
 
 public interface GameStep {
     void performStep();

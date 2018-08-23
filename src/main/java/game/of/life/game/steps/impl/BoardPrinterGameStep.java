@@ -1,8 +1,8 @@
-package game.of.life.steps.impl;
+package game.of.life.game.steps.impl;
 
 import game.of.life.Board;
-import game.of.life.states.CellState;
-import game.of.life.steps.GameStep;
+import game.of.life.state.management.CellState;
+import game.of.life.game.steps.GameStep;
 
 public class BoardPrinterGameStep implements GameStep {
     private Board board;
@@ -13,6 +13,16 @@ public class BoardPrinterGameStep implements GameStep {
 
     @Override
     public void performStep() {
+        printBoard(this.board);
+    }
+
+    private static void clearScreen() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println();
+        }
+    }
+
+    public static void printBoard(Board board) {
         clearScreen();
         for (int row = 0; row < board.getNumberOfRows(); row++) {
             for (int col = 0; col < board.getNumberOfColumns(); col++) {
@@ -22,12 +32,6 @@ public class BoardPrinterGameStep implements GameStep {
                     System.out.print("D ");
                 }
             }
-            System.out.println();
-        }
-    }
-
-    private void clearScreen() {
-        for (int i = 0; i < 10; i++) {
             System.out.println();
         }
     }

@@ -1,8 +1,8 @@
 package game.of.life;
 
 import game.of.life.factories.GameStepsFactory;
-import game.of.life.states.CellStateHolder;
-import game.of.life.steps.GameStep;
+import game.of.life.game.steps.GameStep;
+import game.of.life.state.management.CellStateHolder;
 
 import java.util.List;
 
@@ -27,6 +27,9 @@ public class Game {
         }
     }
 
+    /**
+     * Game's infinite event loop
+     **/
     public void start() {
         while (true) {
             for (GameStep gameStep : gameStepList) {
@@ -34,6 +37,4 @@ public class Game {
             }
         }
     }
-
-
 }

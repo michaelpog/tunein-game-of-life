@@ -1,7 +1,7 @@
-package game.of.life.steps.impl;
+package game.of.life.game.steps.impl;
 
-import game.of.life.states.CellStateHolder;
-import game.of.life.steps.GameStep;
+import game.of.life.state.management.CellStateHolder;
+import game.of.life.game.steps.GameStep;
 
 public class StateChangeGameStep implements GameStep {
     private CellStateHolder cellStateHolder;

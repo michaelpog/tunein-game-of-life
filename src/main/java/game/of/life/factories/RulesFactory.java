@@ -7,7 +7,6 @@ import game.of.life.rules.imp.UnderPopulationRule;
 
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class RulesFactory {
@@ -32,6 +31,6 @@ public class RulesFactory {
     }
 
     public Set<NextStateStrategy> getRules() {
-        return getInstance().rules;
+        return rules;
     }
 }

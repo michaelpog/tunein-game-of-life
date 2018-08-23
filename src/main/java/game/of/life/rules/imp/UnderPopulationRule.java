@@ -1,7 +1,7 @@
 package game.of.life.rules.imp;
 
 import game.of.life.rules.NextStateStrategy;
-import game.of.life.states.CellState;
+import game.of.life.state.management.CellState;
 
 public class UnderPopulationRule implements NextStateStrategy {
     @Override
@@ -12,5 +12,4 @@ public class UnderPopulationRule implements NextStateStrategy {
 
         return CellState.ALIVE;
     }
-
 }

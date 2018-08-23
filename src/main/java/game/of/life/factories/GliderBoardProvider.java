@@ -2,7 +2,7 @@ package game.of.life.factories;
 
 import game.of.life.Board;
 import game.of.life.Cell;
-import game.of.life.states.CellState;
+import game.of.life.state.management.CellState;
 
 public class GliderBoardProvider implements BoardProvider {
     public static final String NAME = "Glider";

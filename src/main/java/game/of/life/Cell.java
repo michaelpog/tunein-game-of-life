@@ -1,7 +1,7 @@
 package game.of.life;
 
-import game.of.life.states.CellState;
-import game.of.life.states.StateChangeObserver;
+import game.of.life.state.management.CellState;
+import game.of.life.state.management.StateChangeObserver;
 
 public class Cell implements StateChangeObserver {
     public static final int NUMBER_OF_STATES = 2;

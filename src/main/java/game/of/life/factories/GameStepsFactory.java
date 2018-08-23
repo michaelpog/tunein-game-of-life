@@ -1,12 +1,9 @@
 package game.of.life.factories;
 
 import game.of.life.Board;
-import game.of.life.steps.GameStep;
-import game.of.life.states.CellStateHolder;
-import game.of.life.steps.impl.BoardPrinterGameStep;
-import game.of.life.steps.impl.NextGenerationGameStep;
-import game.of.life.steps.impl.PauseGameStep;
-import game.of.life.steps.impl.StateChangeGameStep;
+import game.of.life.game.steps.GameStep;
+import game.of.life.game.steps.impl.*;
+import game.of.life.state.management.CellStateHolder;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -33,6 +30,7 @@ public class GameStepsFactory {
         newGameSteps.add(new StateChangeGameStep(cellStateHolder));
         newGameSteps.add(new BoardPrinterGameStep(board));
         newGameSteps.add(new PauseGameStep(1000));
+        //newGameSteps.add(new ReturnKeyWaiterGameStep());
         return Collections.unmodifiableList(newGameSteps);
     }
 

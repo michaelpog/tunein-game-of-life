@@ -1,9 +1,9 @@
-package game.of.life.steps.impl;
+package game.of.life.game.steps.impl;
 
 import game.of.life.Board;
-import game.of.life.rules.imp.ParallelRulesApplier;
-import game.of.life.steps.GameStep;
-import game.of.life.steps.RulesApplier;
+import game.of.life.game.steps.RulesApplier;
+import game.of.life.rules.ParallelRulesApplier;
+import game.of.life.game.steps.GameStep;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,6 +53,6 @@ public class NextGenerationGameStep implements GameStep {
             }
         }
 
-        //all threads are done
+        //all threads are done we can continue
     }
 }
