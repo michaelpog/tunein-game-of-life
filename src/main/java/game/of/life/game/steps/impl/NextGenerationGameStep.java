@@ -48,8 +48,7 @@ public class NextGenerationGameStep implements GameStep {
             try {
                 parallelApplier.await();
             } catch (InterruptedException e) {
-                System.out.println("A rules rules applier thread was interrupted, it's not safe to continue from here ");
-                throw new RuntimeException("One of the threads died");
+                throw new RuntimeException("A  rules applier thread was interrupted, it's not safe to continue from here ", e);
             }
         }
 
